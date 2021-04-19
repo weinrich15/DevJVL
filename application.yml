@@ -5,13 +5,13 @@ logging:
 
 cxflow:
   branches:
-  - master
+    - master
   bug-tracker: JIRA
   bug-tracker-impl:
-  - jira
+    - jira
   filter-severity:
   filter-category:
-  - SQL_Injection
+    - SQL_Injection
   #- Stored_XSS
   #- Reflected_XSS_All_Clients
   filter-cwe:
