@@ -1,7 +1,7 @@
 logging:
   file: flow.log
 
-cxflow:
+cx-flow:
   branches:
     - master
   bug-tracker: Jira
