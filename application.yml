@@ -1,5 +1,3 @@
-server:
-
 logging:
   file: flow.log
 
