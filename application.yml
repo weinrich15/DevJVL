@@ -7,6 +7,8 @@ cxflow:
   branches:
     - master
   bug-tracker: Jira
+  bug-tracker-impl:
+    - Jira
   filter-severity:
   filter-category:
     - SQL_Injection
@@ -16,8 +18,8 @@ cxflow:
   filter-status:
   #   - Urgent
   #   - Confirmed
-  mitre-url: https://cwe.mitre.org/data/definitions/%s.html
-  wiki-url: https://custodela.atlassian.net/wiki/spaces/AS/pages/79462432/Remediation+Guidance 
+  #mitre-url: https://cwe.mitre.org/data/definitions/%s.html
+  #wiki-url: https://custodela.atlassian.net/wiki/spaces/AS/pages/79462432/Remediation+Guidance 
   codebash-url: https://checkmarx-demo.codebashing.com/courses/
   enabled-vulnerability-scanners:
     - sast
