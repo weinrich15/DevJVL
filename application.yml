@@ -6,9 +6,7 @@ logging:
 cxflow:
   branches:
     - master
-  bug-tracker: JIRA
-  bug-tracker-impl:
-    - jira
+  bug-tracker: Jira
   filter-severity:
   filter-category:
     - SQL_Injection
