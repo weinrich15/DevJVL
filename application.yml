@@ -41,7 +41,7 @@ checkmarx:
 jira:
   url: https://mfeferman-cx.atlassian.net 
   username: mark.feferman.cx@gmail.com
-  token: 6YIBGSd8TwADjdTqoTmtCE32
+  token: 
   project: PJC
   issue-type: Bug
   priorities:
