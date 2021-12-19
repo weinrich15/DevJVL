@@ -21,7 +21,7 @@ jobs:
         with:
           project_name: fef-sca-resolver-example
           base_uri: ${{ secrets.AST_URI }}
-          cx_tenant:${{ secrets.CX_TENANT }}
+          cx_tenant: ${{ secrets.CX_TENANT }}
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
           additional_params: --sca-resolver ./ScaResolver
