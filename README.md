@@ -6,8 +6,6 @@ This is a "Vulnerable" Web Application developed by Cyber Security and Privacy F
 
 https://github.com/CSPF-Founder/JavaSecurityCourse
 
-**FEFERMAN**
-
 **The full course on Hacking and Securing Web Java Programs is available in** 
 
 https://www.udemy.com/hacking-securing-java-web-programming/
