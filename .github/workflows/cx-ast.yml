@@ -19,16 +19,13 @@ jobs:
           chmod +x ScaResolver
           
           
-      - name: Install Maven, NPM, ... # Add any necessary package management
-        run: |
-          sudo apt install openjdk-8-jdk maven
-          mvn dependency:tree
-          mvn install -DskipTests
+      - name: Set up JDK 
+        uses: actions/setup-java@v2
           
       - name: Checkmarx AST GitHub Action
         uses: Checkmarx/ast-github-action@2.0.1
         with:
-          project_name: fef-ast-gh-action-sca-resolver-example
+          project_name: adam-fork-fef-ast-gh-action-sca-resolver-example
           base_uri: ${{ secrets.AST_URI }}
           cx_tenant: ${{ secrets.CX_TENANT }}
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
