@@ -19,9 +19,9 @@ jobs:
           
       - name: Install Maven, NPM, ... # Add any necessary package management
         run: |
-          sudo apt install openjdk-8-jdk maven
+          sudo apt install -q openjdk-8-jdk maven
           mvn dependency:tree
-          mvn install -DskipTests
+          mvn install -q -DskipTests
           
       - name: Checkmarx AST GitHub Action
         uses: Checkmarx/ast-github-action@2.0.1
