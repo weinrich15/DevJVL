@@ -13,13 +13,15 @@ jobs:
       
       - name: Download SCA Resolver
         run: |
-          wget https://sca-downloads.s3.amazonaws.com/cli/latest/ScaResolver-linux64.tar.gz
+          wget -q https://sca-downloads.s3.amazonaws.com/cli/latest/ScaResolver-linux64.tar.gz
           tar -xzvf ScaResolver-linux64.tar.gz
           rm -rf ScaResolver-linux64.tar.gz
           
       - name: Install Maven, NPM, ... # Add any necessary package management
         run: |
-          sudo apt install maven npm
+          sudo apt install openjdk-8-jdk maven
+          mvn dependency:tree
+          mvn install -DskipTests
           
       - name: Checkmarx AST GitHub Action
         uses: Checkmarx/ast-github-action@2.0.1
